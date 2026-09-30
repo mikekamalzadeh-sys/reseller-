@@ -1,1 +1,1 @@
-web: python3 reseller_api.py
+web: gunicorn reseller_panel:app --bind 0.0.0.0:$PORT --workers 2 --timeout 60
